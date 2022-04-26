@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
   steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: Checkout repository
     - uses: actions/checkout@v2
     # Install node version 12
     - uses: actions/setup-node@v2-beta
