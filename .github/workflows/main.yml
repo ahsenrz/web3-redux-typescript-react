@@ -33,7 +33,7 @@ jobs:
         run: yarn install
         
       - name: Build Application
-        run: CI= false npm run build # CI=false to ignore warnings
+        run: npm run build
         
         # Installs Surge
       - name: Install surge
