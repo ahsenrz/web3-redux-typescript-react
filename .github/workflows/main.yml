@@ -33,7 +33,7 @@ jobs:
         run: yarn install
         
       - name: Build Application
-        run: npm run build
+        run:  CI='' npm run build
         
         # Installs Surge
       - name: Install surge
