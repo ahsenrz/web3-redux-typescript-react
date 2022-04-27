@@ -30,10 +30,10 @@ jobs:
            node-version: '12'
 
       - name: Installing Frontend dependencies
-        run: yarn install
+        run: cd frontend && yarn install
         
       - name: Build Application
-        run:  CI='' npm run build
+        run: cd frontend && CI='' npm run build
         
         # Installs Surge
       - name: Install surge
