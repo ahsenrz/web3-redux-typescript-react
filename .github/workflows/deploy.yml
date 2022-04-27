@@ -23,7 +23,7 @@ jobs:
 
     # Build react app
     - name: Build the frontend
-      run: cd frontend && CI=false npm run build
+      run: CI=false npm run build
 
     # Install Surge
     - name: Install Surge
