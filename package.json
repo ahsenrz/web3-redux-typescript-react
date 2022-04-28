@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.ts",
-    "build": "tsc -p src"
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon -x ts-node src/index.ts"
   },
   "author": "",
   "license": "ISC",
