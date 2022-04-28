@@ -3,6 +3,8 @@ import * as json from 'koa-json'
 import * as Router from 'koa-router'
 import * as bodyParser from 'koa-bodyparser'
 import * as cors from '@koa/cors'
+require("dotenv").config();
+
 
 const port: number = 5000
 const app = new Koa()
@@ -42,4 +44,4 @@ async function add(ctx: any) {
 // ROUTER MIDDLEWARE
 app.use(router.routes()).use(router.allowedMethods())
 
-app.listen(port, () => console.log('Server started...'))
+app.listen(process.env.PORT || 4000, () => console.log('Server started...'))
