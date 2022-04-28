@@ -14,7 +14,7 @@ const things = [{ name: 'Football' }, { name: 'Cricket' }]
 // JSON PRETTIER MIDDLEWARE
 app.use(json())
 // BODY PARSER MIDDLEWARE
-app.use(bodyParser())
+app.use(bodyParser()) 
 // CORS POLIDY MIDDLEWARE
 app.use(cors())
 
