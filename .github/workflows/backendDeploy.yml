@@ -1,6 +1,10 @@
 name: deploy
 on: push
 
+defaults:
+  run:
+    working-directory: backend
+
 jobs:
   heroku-deploy:
     runs-on: ubuntu-latest
